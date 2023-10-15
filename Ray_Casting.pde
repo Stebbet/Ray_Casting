@@ -51,9 +51,11 @@ void draw() {
     for (Block b : blocks) {
        r.check_collision(b);
     }
-    r.show();
+    //r.show();
     cast(r);
   }
+  rays.get(0).show();
+  rays.get(rays.size() - 1).show();
   popMatrix();
   player.show();
 }
